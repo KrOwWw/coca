@@ -52,7 +52,7 @@
   }
 
   &__article {
-    padding-bottom: 250px;
+    padding-bottom: 165px;
 
     @include mini-desktop {
       &-img {
@@ -60,21 +60,28 @@
       }
     }
     @include tablet {
+      padding-bottom: 100px;
+
       &-img {
         height: 350px;
       }
     }
     @include small-tablet {
+      padding-bottom: 70px;
+
       &-img {
         height: 250px;
       }
     }
     @include mobile {
+      padding-bottom: 50px;
+
       &-img {
         height: 200px;
       }
     }
     @include small-mobile {
+      padding-bottom: 30px;
       &-img {
         height: 150px;
       }
