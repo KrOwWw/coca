@@ -17,3 +17,18 @@ export const useAgencySlider = () => {
     },
   });
 };
+export const useMeetingSlider = () => {
+  new Swiper('.meeting__slider', {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    centeredSlides: false,
+    breakpoints: {
+      576: {
+        spaceBetween: 15,
+      },
+      320: {
+        spaceBetween: 3,
+      },
+    },
+  });
+};
