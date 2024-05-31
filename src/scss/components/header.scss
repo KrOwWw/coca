@@ -38,10 +38,6 @@
     gap: 111px;
 
     @include tablet {
-      gap: 60px;
-    }
-
-    @include small-tablet {
       position: fixed;
       top: 0;
       left: -100vw;
@@ -100,7 +96,7 @@
       color: var(--neutral-color-140);
       transform: translateX(-50%);
 
-      @include small-tablet {
+      @include tablet {
         top: -28px;
         font-size: 20px;
       }
@@ -126,7 +122,7 @@
     @include flex-align-center;
     gap: 32px;
 
-    @include small-tablet {
+    @include tablet {
       gap: 20px;
       flex-direction: column;
     }
@@ -142,7 +138,7 @@
     line-height: 162%;
     color: var(--neutral-color-100);
 
-    @include small-tablet {
+    @include tablet {
       line-height: 200%;
       font-size: 20px;
     }
@@ -172,7 +168,7 @@
 }
 
 .overlay {
-  @include small-tablet {
+  @include tablet {
     position: fixed;
     inset: 0;
     z-index: var(--z-index-2);

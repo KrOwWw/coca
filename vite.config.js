@@ -19,6 +19,7 @@ export default defineConfig({
         pricing: './src/pricing.html',
         contact: './src/contact.html',
         agency: './src/about.html',
+        activity: './src/activity.html',
       },
     },
   },
