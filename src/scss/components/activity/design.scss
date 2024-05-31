@@ -1,0 +1,38 @@
+.design {
+  padding: 115px 0 130px;
+  background-color: var(--black-bg-color);
+
+  &__wrapper {
+    @include flex-all-between;
+    gap: 15px;
+  }
+
+  &__two-blocks {
+    max-width: 50%;
+    height: 100%;
+  }
+
+  &__content {
+    @include flex-column-all-center;
+    gap: 35px;
+
+    &-img {
+      // @include small-desktop {
+      //   max-width: ;
+      // }
+    }
+
+    &-title {
+      font-weight: 600;
+      line-height: 120%;
+      color: #fff;
+    }
+
+    &-text {
+      padding-bottom: 160px;
+      font-weight: 500;
+      line-height: 178%;
+      color: #7e8492;
+    }
+  }
+}

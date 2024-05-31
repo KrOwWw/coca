@@ -3,15 +3,20 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 export const useMissionSlider = () => {
-  new Swiper('.mission__slider', {
-    slidesPerView: 2.5,
-    spaceBetween: 27,
+  new Swiper('.software-development__slider', {
+    // slidesPerView: 2.5,
+    spaceBetween: 30,
     centeredSlides: false,
     breakpoints: {
+      768: {
+        slidesPerView: 2.5,
+      },
       576: {
         spaceBetween: 15,
+        slidesPerView: 2,
       },
       320: {
+        slidesPerView: 1,
         spaceBetween: 3,
       },
     },
