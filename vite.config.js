@@ -20,6 +20,7 @@ export default defineConfig({
         contact: './src/contact.html',
         agency: './src/about.html',
         activity: './src/activity.html',
+        AWSServices: './src/AWS-Services.html',
       },
     },
   },

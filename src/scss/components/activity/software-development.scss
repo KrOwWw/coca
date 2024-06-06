@@ -8,7 +8,7 @@
       @include flex-all-center;
       position: absolute;
       top: 126px;
-      left: 40%;
+      left: 45%;
       z-index: var(--z-index-2);
       border-radius: 50%;
       width: 80px;
@@ -31,6 +31,8 @@
   }
 
   &__article {
+    max-width: 500px;
+
     &-head {
       @include flex-justify-between;
       font-weight: 400;

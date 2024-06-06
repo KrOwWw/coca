@@ -1,16 +1,13 @@
 import Swiper from 'swiper';
-// import { Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 export const useMissionSlider = () => {
   new Swiper('.software-development__slider', {
-    // slidesPerView: 2.5,
     spaceBetween: 30,
     centeredSlides: false,
+    slidesPerView: 2.5,
     breakpoints: {
-      768: {
-        slidesPerView: 2.5,
-      },
       576: {
         spaceBetween: 15,
         slidesPerView: 2,
@@ -23,13 +20,19 @@ export const useMissionSlider = () => {
   });
 };
 export const useArticlesSlider = () => {
-  new Swiper('.__slider', {
-    // slidesPerView: 2.5,
+  new Swiper('.articles__slider', {
+    modules: [Navigation],
     spaceBetween: 30,
+    slidesPerView: 1,
+    loop: true,
     centeredSlides: false,
+    navigation: {
+      prevEl: '.articles__btn--prev',
+      nextEl: '.articles__btn--next',
+    },
     breakpoints: {
       768: {
-        slidesPerView: 2.5,
+        slidesPerView: 3,
       },
       576: {
         spaceBetween: 15,
