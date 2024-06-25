@@ -19,6 +19,7 @@ export const useMissionSlider = () => {
     },
   });
 };
+
 export const useArticlesSlider = () => {
   new Swiper('.articles__slider', {
     modules: [Navigation],

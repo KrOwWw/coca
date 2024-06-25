@@ -1,13 +1,19 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Scrollbar, EffectFade } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/scrollbar';
 
 export const useInsightSlider = () => {
   new Swiper('.insight__slider', {
+    modules: [Scrollbar],
     slidesPerView: 'auto',
     spaceBetween: 32,
-    loop: true,
     centeredSlides: true,
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+
     breakpoints: {
       993: {
         centeredSlides: false,
@@ -21,7 +27,14 @@ export const useTestimonialsSlider = () => {
     modules: [Navigation],
     slidesPerView: 1,
     spaceBetween: 22,
-    loop: true,
+    // loop: true,
+    // crossFade: false,
+
+    effect: 'fade',
+
+    fadeEffect: {
+      crossFade: true,
+    },
 
     navigation: {
       prevEl: '.testimonials__btn--prev',

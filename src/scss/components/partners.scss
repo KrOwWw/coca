@@ -39,9 +39,13 @@
     @include flex-all-center;
     gap: 10px 30px;
     flex-wrap: wrap;
+  }
+
+  &__slider {
+    display: none;
 
     @include mobile {
-      gap: 10px;
+      display: flex;
     }
   }
 
