@@ -281,8 +281,7 @@
 
 @include mobile {
   .accordion {
-    // background-color: #eee;
-    // color: #444;
+    position: relative;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -290,16 +289,32 @@
     border: none;
     outline: none;
     transition: 0.4s;
-  }
 
-  .active,
-  .accordion:hover {
-    // background-color: #ccc;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 9px;
+      height: 15px;
+      width: 3px;
+      background-color: var(--neutral-color-150);
+      rotate: -45deg;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 0;
+      height: 15px;
+      width: 3px;
+      background-color: var(--neutral-color-150);
+      rotate: 45deg;
+    }
   }
 
   .panel {
     padding: 0 18px;
-    // background-color: white;
     display: none;
     overflow: hidden;
   }
