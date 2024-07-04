@@ -46,10 +46,10 @@
   }
 
   &__slider {
-    visibility: hidden;
+    display: none;
 
     @include mobile {
-      visibility: visible;
+      display: flex;
     }
   }
 
