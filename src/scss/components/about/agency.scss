@@ -7,6 +7,10 @@
     letter-spacing: -0.04em;
     color: var(--neutral-color-100);
 
+    @include tablet {
+      text-align: center;
+    }
+
     @include mini-desktop {
       padding: 20px 0 30px;
     }
@@ -14,8 +18,12 @@
 
   &__content {
     @include flex-justify-between;
-    max-width: 838px;
     padding-bottom: 135px;
+
+    @include tablet {
+      @include flex-column-all-center;
+      text-align: center;
+    }
 
     @include mini-desktop {
       padding-bottom: 40px;
@@ -24,6 +32,14 @@
     &-info {
       max-width: 738px;
     }
+    &__link {
+      max-width: 162px;
+    }
+  }
+
+  &__img {
+    width: 162px;
+    height: 162px;
   }
 
   &::before {

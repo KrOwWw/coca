@@ -39,13 +39,17 @@
     @include flex-all-center;
     gap: 10px 30px;
     flex-wrap: wrap;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__slider {
-    display: none;
+    visibility: hidden;
 
     @include mobile {
-      display: flex;
+      visibility: visible;
     }
   }
 
