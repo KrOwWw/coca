@@ -15,7 +15,7 @@ export const useArticlesSlider = () => {
     modules: [Navigation],
     spaceBetween: 30,
     slidesPerView: 'auto',
-    loop: true,
+    // loop: true,
     centeredSlides: false,
     navigation: {
       prevEl: '.articles__btn--prev',
