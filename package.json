@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "intl-tel-input": "^22.0.2",
-    "swiper": "^11.1.1"
+    "swiper": "^11.1.1",
+    "ymaps": "^0.2.1"
   }
 }
