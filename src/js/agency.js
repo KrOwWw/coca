@@ -1,6 +1,7 @@
 import '/scss/about.scss';
 
 // components
+import { hideHeader } from './components/hideHeader.js';
 import { useTheme } from './components/theme.js';
 import { useBurger } from './components/burger.js';
 import {
@@ -9,6 +10,7 @@ import {
 } from './components/about/slider.js';
 import { useToggle } from './components/about/toggleGetInTouch.js';
 
+hideHeader();
 useTheme();
 useBurger();
 useAgencySlider();
