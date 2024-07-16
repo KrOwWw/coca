@@ -9,6 +9,7 @@ import {
   useMeetingSlider,
 } from './components/about/slider.js';
 import { useToggle } from './components/about/toggleGetInTouch.js';
+import { useAccordion } from './components/accordion.js';
 
 hideHeader();
 useTheme();
@@ -16,3 +17,4 @@ useBurger();
 useAgencySlider();
 useMeetingSlider();
 useToggle();
+useAccordion();

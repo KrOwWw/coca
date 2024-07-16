@@ -8,9 +8,11 @@ import {
   useMissionSlider,
   useArticlesSlider,
 } from './components/activity/slider.js';
+import { useAccordion } from './components/accordion.js';
 
 hideHeader();
 useTheme();
 useBurger();
 useMissionSlider();
 useArticlesSlider();
+useAccordion();
