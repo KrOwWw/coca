@@ -1,6 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 26px 0 22px;
-  background-color: transparent;
+  background-color: var(--neutral-color-10);
 
   @include mobile {
     padding: 22px 0 18px;
